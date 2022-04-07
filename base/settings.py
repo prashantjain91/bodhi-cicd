@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-uvh*ilzu4j7f09)^-a@)zsu#ly1s82nx(1(c5(-l9ckd-1p5ti
 DEBUG = True
 
 ALLOWED_HOSTS = ['bodhi-env.eba-yzzurwdy.us-east-1.elasticbeanstalk.com']
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -83,6 +84,14 @@ DATABASES = {
         'PORT': os.environ['RDS_PORT'],
     }
 }
+
+""" DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+} """
+
 
 
 # Password validation
